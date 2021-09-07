@@ -29,6 +29,21 @@ func Function6(s string) string {
 	return s
 }
 
+func Function7(fn func(int) string) {
+	fmt.Println("This is a function. 7 indeed!")
+	fmt.Println(fn(10))
+}
+
+func Function8(fn func(int) *Type1) {
+	fmt.Println("This is a function. 8 indeed!")
+	fmt.Println(fn(10))
+}
+
+func Function9(fn func(int) Type1) {
+	fmt.Println("This is a function. 9 indeed!")
+	fmt.Println(fn(10))
+}
+
 type Type1 struct {
 	Field string
 }
