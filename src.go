@@ -24,6 +24,11 @@ func Function5(t Type2) {
 	fmt.Println(t.Field)
 }
 
+func Function6(s string) string {
+	fmt.Println("This is a function. 6 indeed!")
+	return s
+}
+
 type Type1 struct {
 	Field string
 }
