@@ -44,6 +44,27 @@ func Function9(fn func(int) Type1) {
 	fmt.Println(fn(10))
 }
 
+func Function10(items map[string]int) {
+	fmt.Println("This is a function. 10 indeed!")
+	for s, i := range items {
+		fmt.Println(s, i)
+	}
+}
+
+func Function11(items []string) {
+	fmt.Println("This is a function. 11 indeed!")
+	for i, s := range items {
+		fmt.Println(i, s)
+	}
+}
+
+func Function12(items [10]string) {
+	fmt.Println("This is a function. 12 indeed!")
+	for i, s := range items {
+		fmt.Println(i, s)
+	}
+}
+
 type Type1 struct {
 	Field string
 }
