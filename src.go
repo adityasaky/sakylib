@@ -2,6 +2,10 @@ package sakylib
 
 import "fmt"
 
+type Interface interface {
+	function()
+}
+
 func Function1() {
 	fmt.Println("This is a function. 1 indeed!")
 }
@@ -63,6 +67,14 @@ func Function12(items [10]string) {
 	for i, s := range items {
 		fmt.Println(i, s)
 	}
+}
+
+func Function13(i interface{}) {
+	fmt.Println("This is a function. 13 indeed!")
+}
+
+func Function14(i Interface) {
+	fmt.Println("This is a function. 14 indeed!")
 }
 
 type Type1 struct {
